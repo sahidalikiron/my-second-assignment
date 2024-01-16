@@ -219,6 +219,95 @@ main {
 
 
 
+
+/* Newsletter section styles */
+.newsletter {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.newsletter .newsletter-content {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 30px;
+    height: 360px;
+}
+
+.hr-1 {
+    height: 1px;
+    background-color: rgb(212, 209, 209);
+}
+
+.newsletter-content h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.newsletter-content p {
+    color: #5A5A5D;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.newsletter-content input {
+    color: rgba(19, 19, 24, 0.30);
+    font-weight: 400;
+    border: none;
+    padding: 18px;
+    margin-top: 15px;
+    width: 310px;
+    border-radius: 8px;
+    background-color: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter-content button {
+    margin-top: 15px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 800;
+    border: none;
+    width: 345px;
+    border-radius: 8px;
+    background-color: #FF5400;
+    padding: 13px;
+}
+
+
+.newsletter-img .save-up {
+    border-radius: 16px;
+    background-color: #FF5400;
+    padding: 1px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    bottom: 183px;
+    left: 370px;
+    transform: rotate(-35deg);
+}
+
+.save-up p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.save-up h4 {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+
+
+
+
 /* footer section styles */
 footer {
     background-color: rgba(19, 19, 24, 0.05);
@@ -255,6 +344,7 @@ footer {
     font-size: 2rem;
     font-weight: 800;
 }
+
 .hr {
     height: 1px;
     background-color: rgb(212, 209, 209);
@@ -266,8 +356,11 @@ footer {
 
 
 
+
+
 /* Responsive styles */
 @media screen and (max-width:576px) {
+    
     nav {
         flex-direction: column;
     }
@@ -309,27 +402,83 @@ footer {
     }
 
 
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .card-container .card-3 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card .card-1,
+    .card-2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    .newsletter {
+        flex-direction: column;
+    }
+    
+    .newsletter-content input {
+        width: 88%;
+    }
+
+    .newsletter-content button {
+        width: 100%;
+    }
+
+    .newsletter-content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .newsletter-img img {
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .save-up p {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .save-up h4 {
+        color: #FFF;
+        font-size: 1.1rem;
+        font-weight: 800;
+        margin-top: 0;
+    }
+
+    .newsletter-img .save-up {
+        border-radius: 16px;
+        background-color: #FF5400;
+        padding: 1px;
+        /* width: 170px; */
+        width: 45%;
+        height: 65px;
+        text-align: center;
+        position: relative;
+        bottom: 105px;
+        left: 180px;
+        transform: rotate(-25deg);
+    }
+
+
 
     .footer p {
         padding-left: 30px;
         padding-right: 20px;
     }
-
-
-    .card{
-        grid-template-columns: 1fr;
-    }
-    .card-title {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    .card-container .card-3 {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .card .card-1, .card-2{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
 }
