@@ -140,7 +140,7 @@ nav a {
 /* tours section styles */
 main {
     max-width: 1100px;
-    margin: 100px auto;
+    margin: 80px auto;
 }
 
 .tours-container {
@@ -160,6 +160,55 @@ main {
     font-size: 3rem;
     font-weight: 800
 }
+
+
+
+/* destination styles */
+.destination {
+    margin-top: 100px;
+}
+
+.destination-title {
+    text-align: center;
+    padding: 0 200px;
+}
+
+.destination-title h2 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.destination-title p {
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+
+.row>div {
+    position: relative;
+    color: #FFF;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 
 /* card section styles */
@@ -222,7 +271,7 @@ main {
 
 /* Newsletter section styles */
 .newsletter {
-    margin-top: 100px;
+    margin-top: 120px;
     display: flex;
     gap: 20px;
 }
@@ -360,7 +409,6 @@ footer {
 
 /* Responsive styles */
 @media screen and (max-width:576px) {
-    
     nav {
         flex-direction: column;
     }
@@ -402,6 +450,23 @@ footer {
     }
 
 
+    .destination-title{
+        padding: 0;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .destination .row img{
+        width: 95%;
+        margin-left: 10px;
+        /* margin-right: 30px; */
+    }
+    .destination .row .row-img{
+        height: 210px;
+    }
+    
+
+
     .card {
         grid-template-columns: 1fr;
     }
@@ -426,7 +491,7 @@ footer {
     .newsletter {
         flex-direction: column;
     }
-    
+
     .newsletter-content input {
         width: 88%;
     }
