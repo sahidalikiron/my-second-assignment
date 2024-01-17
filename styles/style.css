@@ -35,7 +35,7 @@ nav {
     align-items: center;
 }
 
-.nav-icon{
+.nav-icon {
     display: none;
 }
 
@@ -366,6 +366,52 @@ main {
 
 
 
+/* review section styles */
+.review {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.review-title {
+    text-align: center;
+    margin: 0 200px;
+}
+
+.review-title h1 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.review-title {
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+}
+
+.review-content {
+    background-color: rgba(233, 68, 68, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.color{
+    background-color: rgba(41, 206, 246, 0.05);
+}
+
+.review-place {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.review-name {
+    color: #43434c;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+
+
 
 
 /* footer section styles */
@@ -420,10 +466,11 @@ footer {
 
 /* Responsive styles */
 @media screen and (max-width:576px) {
-    .navbar{
+    .navbar {
         display: none;
     }
-    .nav-icon{
+
+    .nav-icon {
         display: block;
     }
 
@@ -442,18 +489,21 @@ footer {
         padding-right: 10px;
 
     }
-    .form-container{
+
+    .form-container {
         flex-direction: column;
     }
+
     .banner .banner-title {
         color: #FFF;
         font-size: 2rem;
         font-weight: 800;
         padding-top: 15px;
-        
-        
+
+
     }
-    .banner{
+
+    .banner {
         height: 480px;
         padding-top: 10px;
     }
@@ -465,14 +515,14 @@ footer {
 
     .form-content {
         width: 170px;
-        height: 45px;        
+        height: 45px;
     }
-    
+
     .input {
         width: 140px;
-        
+
     }
-    
+
     .btn {
         width: 170px;
         height: 45px;
@@ -506,6 +556,9 @@ footer {
 
     .destination-title {
         padding: 0;
+    }
+    .destination-title h2 {
+        font-size: 2rem;
     }
 
     .row {
@@ -594,6 +647,16 @@ footer {
         bottom: 105px;
         left: 180px;
         transform: rotate(-25deg);
+    }
+
+
+    .review {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .review-title {
+        margin: 0px;
     }
 
 
